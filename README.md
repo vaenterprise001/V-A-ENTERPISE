@@ -164,10 +164,10 @@ We ensure safety, discipline, and professionalism in every assignment.
 <section id="contact">
 <h2>Contact Us</h2>
 <p style="margin-top:20px;">
-📞 Phone: <a href="tel:9737382651" style="color:#38bdf8;">9737382651</a>
+📞 Phone: <a href="tel:9737382651" style="color:#38bdf8;">9737382651,9426428671</a>
 </p>
 <p>
-📧 Email: <a href="mailto:vaentreprise@gmail.com" style="color:#38bdf8;">vaentreprise@gmail.com</a>
+📧 Email: <a href="mailto:vaentreprise@gmail.com" style="color:#38bdf8;">pa509192@gmail.com</a>
 </p>
 </section>
 
