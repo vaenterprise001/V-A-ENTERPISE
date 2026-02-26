@@ -26,7 +26,7 @@ body{
   justify-content:space-between;
   align-items:center;
   padding:20px 60px;
-  background:rgba(0,0,0,0.85);
+  background:rgba(0,0,0,0.9);
   backdrop-filter:blur(12px);
   z-index:1000;
 }
@@ -89,7 +89,7 @@ body{
   background:#ffae00;
 }
 
-/* ===== SERVICES ===== */
+/* ===== SECTIONS ===== */
 .section{
   padding:120px 20px;
   text-align:center;
@@ -110,7 +110,7 @@ body{
   border-radius:20px;
   backdrop-filter:blur(10px);
   box-shadow:0 0 25px rgba(255,215,0,0.15);
-  transition:0.5s;
+  transition:0.6s;
   opacity:0;
   transform:translateY(80px);
 }
@@ -124,7 +124,21 @@ body{
 .contact-box{
   margin-top:40px;
   font-size:18px;
-  line-height:30px;
+}
+
+.contact-box p{
+  margin:15px 0;
+}
+
+.contact-box a{
+  color:#FFD700;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.contact-box a:hover{
+  color:#ffae00;
 }
 
 /* ===== FOOTER ===== */
@@ -186,11 +200,25 @@ footer{
   </div>
 </div>
 
-<div class="contact-box">
-  📞 9426428671 <br>
-  📞 9737382651 <br>
-  📧 emailpa509192@gmail.com
-</div>
+<div class="section" id="contact">
+  <h2>Contact VA Enterprise</h2>
+
+  <div class="contact-box">
+
+    <p>
+      📞 
+      <a href="tel:9426428671">9426428671</a> |
+      <a href="tel:9737382651">9737382651</a>
+    </p>
+
+    <p>
+      📧 
+      <a href="mailto:emailpa509192@gmail.com">
+        emailpa509192@gmail.com
+      </a>
+    </p>
+
+  </div>
 </div>
 
 <footer>
