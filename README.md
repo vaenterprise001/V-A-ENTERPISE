@@ -1,83 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VA Enterprise | Professional Manpower & Security</title>
+<title>VA Enterprise | Elite Security & Manpower</title>
 
 <style>
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: 'Segoe UI', sans-serif;
-  scroll-behavior:smooth;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-  background:#0f172a;
+  background:#0a0f1c;
   color:white;
+  overflow-x:hidden;
 }
 
-/* ===== HEADER ===== */
-header{
+/* ===== NAVBAR ===== */
+.navbar{
   position:fixed;
-  top:0;
   width:100%;
-  background:rgba(0,0,0,0.85);
+  top:0;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:20px 50px;
+  padding:20px 60px;
+  background:rgba(0,0,0,0.85);
+  backdrop-filter:blur(12px);
   z-index:1000;
 }
 
-header h1{
-  color:gold;
+.logo{
+  font-size:26px;
+  font-weight:bold;
+  color:#FFD700;
   letter-spacing:2px;
 }
 
-nav a{
+.navbar a{
   color:white;
   text-decoration:none;
-  margin-left:25px;
+  margin-left:30px;
   transition:0.3s;
-  font-weight:500;
 }
 
-nav a:hover{
-  color:gold;
+.navbar a:hover{
+  color:#FFD700;
 }
 
 /* ===== HERO ===== */
 .hero{
-  min-height:100vh;
-  padding-top:140px;
+  height:100vh;
   display:flex;
-  flex-direction:column;
   justify-content:center;
   align-items:center;
+  flex-direction:column;
   text-align:center;
-  background:linear-gradient(to right,#000428,#004e92);
+  background:linear-gradient(135deg,#000000,#1c1f2f,#002b5c);
+  padding:20px;
 }
 
-.hero h2{
-  font-size:48px;
+.hero h1{
+  font-size:55px;
   margin-bottom:20px;
-  animation:fadeDown 1.5s ease;
+  animation:fadeUp 1.5s ease;
 }
 
 .hero p{
-  max-width:650px;
+  max-width:700px;
   margin-bottom:30px;
-  opacity:0.9;
+  opacity:0.85;
 }
 
 .btn{
   padding:15px 40px;
   border:none;
-  border-radius:30px;
-  background:gold;
+  border-radius:40px;
+  background:#FFD700;
   color:black;
   font-weight:bold;
   cursor:pointer;
@@ -85,38 +85,46 @@ nav a:hover{
 }
 
 .btn:hover{
-  transform:scale(1.1);
-  background:orange;
+  transform:scale(1.15);
+  background:#ffae00;
 }
 
-/* ===== SECTIONS ===== */
-section{
-  padding:100px 20px;
+/* ===== SERVICES ===== */
+.section{
+  padding:120px 20px;
   text-align:center;
 }
 
-.services{
+.cards{
   display:flex;
-  flex-wrap:wrap;
   justify-content:center;
-  gap:30px;
-  margin-top:50px;
+  gap:40px;
+  flex-wrap:wrap;
+  margin-top:60px;
 }
 
 .card{
-  background:#1e293b;
-  padding:30px;
+  background:rgba(255,255,255,0.05);
+  padding:40px;
   width:300px;
-  border-radius:15px;
-  transition:0.6s;
-  box-shadow:0 0 20px rgba(255,215,0,0.2);
+  border-radius:20px;
+  backdrop-filter:blur(10px);
+  box-shadow:0 0 25px rgba(255,215,0,0.15);
+  transition:0.5s;
   opacity:0;
-  transform:translateY(60px);
+  transform:translateY(80px);
 }
 
 .card:hover{
-  transform:translateY(-10px);
-  box-shadow:0 0 30px gold;
+  transform:translateY(-15px);
+  box-shadow:0 0 40px rgba(255,215,0,0.5);
+}
+
+/* ===== CONTACT ===== */
+.contact-box{
+  margin-top:40px;
+  font-size:18px;
+  line-height:30px;
 }
 
 /* ===== FOOTER ===== */
@@ -127,19 +135,15 @@ footer{
   color:gray;
 }
 
-/* ===== ANIMATIONS ===== */
-@keyframes fadeDown{
-  from{opacity:0; transform:translateY(-50px);}
+/* ===== ANIMATION ===== */
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(60px);}
   to{opacity:1; transform:translateY(0);}
 }
 
-/* ===== RESPONSIVE ===== */
 @media(max-width:768px){
-  header{
+  .navbar{
     flex-direction:column;
-  }
-  nav{
-    margin-top:10px;
   }
 }
 </style>
@@ -147,54 +151,49 @@ footer{
 
 <body>
 
-<header>
-  <h1>VA ENTERPRISE</h1>
-  <nav>
+<div class="navbar">
+  <div class="logo">VA ENTERPRISE</div>
+  <div>
     <a href="#home">Home</a>
-    <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<div class="hero" id="home">
-  <h2>Professional Manpower & Security Solutions</h2>
-  <p>We provide highly trained security guards and trusted manpower services for corporate offices, residential societies, industries and events.</p>
-  <button class="btn" onclick="showMessage()">Request Service</button>
+  </div>
 </div>
 
-<section id="about">
-  <h2>About VA Enterprise</h2>
-  <p style="max-width:700px;margin:20px auto;">
-    VA Enterprise is committed to delivering disciplined manpower and top-tier security services with professionalism, reliability and excellence.
-  </p>
-</section>
+<div class="hero" id="home">
+  <h1>Elite Security & Professional Manpower</h1>
+  <p>Providing disciplined, trained and verified security guards and manpower solutions for corporate offices, residential societies, industries and major events.</p>
+  <button class="btn" onclick="showMessage()">Hire Now</button>
+</div>
 
-<section id="services">
-  <h2>Our Services</h2>
-  <div class="services">
+<div class="section" id="services">
+  <h2>Our Premium Services</h2>
+  <div class="cards">
     <div class="card">
-      <h3>Security Guards</h3>
-      <p>Certified and trained guards ensuring complete protection.</p>
+      <h3>Armed & Unarmed Guards</h3>
+      <p>Highly trained guards ensuring 24/7 protection and safety.</p>
     </div>
 
     <div class="card">
-      <h3>Corporate Manpower</h3>
-      <p>Professional staffing solutions tailored for industries.</p>
+      <h3>Corporate Staffing</h3>
+      <p>Professional manpower solutions tailored for business needs.</p>
     </div>
 
     <div class="card">
-      <h3>Event Security</h3>
-      <p>Reliable event monitoring and crowd management services.</p>
+      <h3>Event & Industrial Security</h3>
+      <p>Complete surveillance and crowd management services.</p>
     </div>
   </div>
-</section>
+</div>
 
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Email: info@vaenterprise.com</p>
-  <p>Phone: +91 9876543210</p>
-</section>
+<div class="section" id="contact">
+  <h2>Contact VA Enterprise</h2>
+  <div class="contact-box">
+    📞 9426428671 <br>
+    📞 9737382651 <br>
+    📧 emailpa509192@gmail.com
+  </div>
+</div>
 
 <footer>
   © 2026 VA Enterprise | All Rights Reserved
@@ -202,10 +201,9 @@ footer{
 
 <script>
 function showMessage(){
-  alert("Thank you for choosing VA Enterprise. Our team will contact you soon.");
+  alert("Thank you for choosing VA Enterprise. Our team will contact you immediately.");
 }
 
-/* Scroll Animation */
 window.addEventListener("scroll",function(){
   const cards=document.querySelectorAll(".card");
   cards.forEach(card=>{
