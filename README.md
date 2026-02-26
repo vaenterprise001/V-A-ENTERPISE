@@ -186,13 +186,11 @@ footer{
   </div>
 </div>
 
-<div class="section" id="contact">
-  <h2>Contact VA Enterprise</h2>
-  <div class="contact-box">
-    📞 9426428671 <br>
-    📞 9737382651 <br>
-    📧 emailpa509192@gmail.com
-  </div>
+<div class="contact-box">
+  📞 9426428671 <br>
+  📞 9737382651 <br>
+  📧 emailpa509192@gmail.com
+</div>
 </div>
 
 <footer>
