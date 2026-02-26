@@ -184,8 +184,8 @@ footer{
   <h2>Our Premium Services</h2>
   <div class="cards">
     <div class="card">
-      <h3>Armed & Unarmed Guards</h3>
-      <p>Highly trained guards ensuring 24/7 protection and safety.</p>
+      <h3>security guards </h3>
+      <p>Highly trained security guards ensuring  protection and safety.</p>
     </div>
 
     <div class="card">
